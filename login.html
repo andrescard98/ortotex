@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Registro de usuarios nuevos</title>
+    <style>
+        :root {
+            --header-color: #069ca4;
+            --text-color: #353535;
+            --link-color: #069ca4;
+            --text-input-field: #F7F7F7;
+            --sm: 16px;
+            --md: 24px;
+            --lg: 28px;
+        }
+
+        .body{
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+
+        .logo{
+            width: 200px;
+            margin-bottom: 48px;
+            justify-self: center;
+            display: none;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        form a {
+            color: var(--text-color);
+            font-size: var(--sm);
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            margin-bottom: 52px;
+        }
+        .label{
+            font-size: var(--sm);
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size:var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
+        }
+
+        .input-email{
+            margin-bottom: 22px;
+
+        }
+
+        .primary-button{
+            background-color: var(--link-color);
+            border-radius: 8px;
+            border: none;
+            color: var(--text-input-field);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .secondary-button{
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid var(--link-color);
+            color:var(--link-color);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .login-button{
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 640px){
+            .logo{
+                display: block;
+            }
+            .signup-button{
+                margin-top: 120px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="./assets/ORTOTEX.png" alt="logo" class="logo">
+
+            <form action="">
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" placeholder="Escribe tu correo aquí" class="input input-password">
+
+                <label for="password" class="label">escribe la contraseña</label>
+                <input type="password" id="password" placeholder="Escribe tu contraseña" class="input input-password">
+
+                <input type="submit" value="Entrar" class="primary-button login-button" />
+
+                <a href="/">Recuperar mi contraseña</a>
+            </form>
+
+            <button class="secondary-button signup-button">Registrarme</button>
+
+        </div>
+    </div>
+</body>
+</html>

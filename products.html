@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Productos</title>
+    <style>
+        :root {
+            --header-color: #069ca4;
+            --text-color: #353535;
+            --link-color: #069ca4;
+            --text-input-field: #F7F7F7;
+            --sm: 16px;
+            --md: 24px;
+            --lg: 28px;
+        }
+
+        .body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(4, 240px);
+            gap: 26px;
+        }
+
+        .product-card {
+            width: 240px;
+
+        }
+
+        .product-card img {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .product-card div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+
+        .product-card div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 640px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 240px);
+                gap: 140px;
+            }
+
+            .product-card {
+                width: 140px;
+
+            }
+
+            .product-card img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="./assets/products/NK-015.jpg" alt="" class="product-img">
+                <div>
+                    <p>Collar de tracción</p>
+                    <p>Línea blanda</p>
+                    <p>$55.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_4506.jpg" alt="" class="product-img">
+                <div>
+                    <p>Soporte para hombro</p>
+                    <p>Línea blanda</p>
+                    <p>$36.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_1556.jpg" alt="" class="product-img">
+                <div>
+                    <p>Soporte para codo de tenista</p>
+                    <p>Línea blanda</p>
+                    <p>$15.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_1983.jpg" alt="" class="product-img">
+                <div>
+                    <p>Rodillera elástica cn almohadilla rotuliana y estabilizadores laterales</p>
+                    <p>Línea blanda</p>
+                    <p>$45.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/BK-017-WEB.jpg" alt="" class="product-img">
+                <div>
+                    <p>Soporte lumbar en X, con doble refuerzo</p>
+                    <p>Línea blanda</p>
+                    <p>$38.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_2603.jpg" alt="" class="product-img">
+                <div>
+                    <p>Rodillera corta con estabilizador de paleta</p>
+                    <p>Línea blanda</p>
+                    <p>$34.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_3456.jpg" alt="" class="product-img">
+                <div>
+                    <p>Ortesis tipo A.F.O(pie caído)</p>
+                    <p>Línea blanda</p>
+                    <p>$100.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/IMG_3999.jpg" alt="" class="product-img">
+                <div>
+                    <p>Tobillera elástica tipo media</p>
+                    <p>Línea blanda</p>
+                    <p>$10.800</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/NK-015.jpg" alt="" class="product-img">
+                <div>
+                    <p>Collar de tracción</p>
+                    <p>Línea blanda</p>
+                    <p>$55.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/NK-015.jpg" alt="" class="product-img">
+                <div>
+                    <p>Collar de tracción</p>
+                    <p>Línea blanda</p>
+                    <p>$55.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/NK-015.jpg" alt="" class="product-img">
+                <div>
+                    <p>Collar de tracción</p>
+                    <p>Línea blanda</p>
+                    <p>$55.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/products/NK-015.jpg" alt="" class="product-img">
+                <div>
+                    <p>Collar de tracción</p>
+                    <p>Línea blanda</p>
+                    <p>$55.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
